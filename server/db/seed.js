@@ -1,4 +1,5 @@
-const dbConnection = require('./index')
+const dbConnection = require('./index').dbConnection
+//we are taking an object, and only want the dbconnection value here
 
 const runSeed = async() => {
   await dbConnection.sync({ force: true });

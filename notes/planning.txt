@@ -17,14 +17,14 @@ components:
 
 proposed task order(subject to change):
 
--set up initial boilerplate for project (git setup, installing libraries, establishing basic routes, creating database)
--defining models with sequelize for movies and genres tables, and relating them
--defining a route to send back an html page with a form to create a genre
--defining a route to send back an html page with a form to enter a new movie
--defining a route to send back an html page with the list of movies in the database
--adding functionality for setting a movie to 'watched' and 'unwatched'
--updating the movies listing routes to filter by genre and 'unwatched'
--route for a random movie
+ x Set up initial boilerplate for project (git setup, installing libraries, establishing basic routes, creating database)
+ x Defining models with sequelize for movies and genres tables, and relating them
+ x Defining a route to send back an html page with a form to create a genre
+ - Defining a route to send back an html page with a form to enter a new movie
+ - Defining a route to send back an html page with the list of movies in the database
+ - Adding functionality for setting a movie to 'watched' and 'unwatched'
+ - Updating the movies listing routes to filter by genre and 'unwatched'
+ - Route for a random movie
 
 
 notice how this project is started, outline what you want in a txt doc, start with a general sentence of what you want, add in features you want, them write what components you will be using (express, sequelize, etc). then write the order you want to make the components. this gives a great starting point as to what you want to make, what you will be using to make it, and the order in which you will be making it. The more you plan ahead of time the smoother the project should go, of course the more time spent planning is less time coding so there is a give and take.

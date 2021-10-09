@@ -4,8 +4,6 @@ const dbConnection = new Sequelize(
   'postgres://@localhost:5432/moviewatchlist'
 );
 
-module.exports = dbConnection;
-
 /*
   Movie model
     -title(not null)
@@ -54,4 +52,13 @@ Movie.belongsToMany(Genre, { through: 'movies_genres' });
 Genre.belongsToMany(Movie, { through: 'movies_genres' });
 //in our through we are using a string to name the model, we can actually make another model and put that in the through as a variable so we can add more columns to that table, however we dont need that
 
-
+module.exports = {
+  dbConnection: dbConnection,
+  Movie: Movie,
+  Genre: Genre
+}
+/* using advanced object syntax could make this {
+  dbConnection,
+  Movie,
+  Genre
+} */
