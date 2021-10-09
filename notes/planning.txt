@@ -1,0 +1,30 @@
+movie watchlist app
+this site will be a self hosted app for one person to keep track of what movies they want to watch
+
+features:
+
+-adding and removing to their watchlist
+-creating and attaching genres to each movie
+-filtering the list by unwatched, genres
+-'im feeling lucky' type get a random movie features
+
+components:
+
+-a node.js program that will use express to listen for http messages
+-within the server program, a potsgres database will be used to store movies and genres.
+-sequelize will be used to define and interact with movies and genres tables
+-some css and front end js will be used to improve user experience in the browser
+
+proposed task order(subject to change):
+
+-set up initial boilerplate for project (git setup, installing libraries, establishing basic routes, creating database)
+-defining models with sequelize for movies and genres tables, and relating them
+-defining a route to send back an html page with a form to create a genre
+-defining a route to send back an html page with a form to enter a new movie
+-defining a route to send back an html page with the list of movies in the database
+-adding functionality for setting a movie to 'watched' and 'unwatched'
+-updating the movies listing routes to filter by genre and 'unwatched'
+-route for a random movie
+
+
+notice how this project is started, outline what you want in a txt doc, start with a general sentence of what you want, add in features you want, them write what components you will be using (express, sequelize, etc). then write the order you want to make the components. this gives a great starting point as to what you want to make, what you will be using to make it, and the order in which you will be making it. The more you plan ahead of time the smoother the project should go, of course the more time spent planning is less time coding so there is a give and take.
